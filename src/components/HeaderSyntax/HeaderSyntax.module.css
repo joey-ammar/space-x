@@ -1,0 +1,37 @@
+.HeaderSyntax {
+  height: 85vh;
+  width: 100%;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.Container {
+  width: 90%;
+  margin: 0 auto !important;
+}
+.HeaderSyntacInside {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px !important;
+}
+.HeaderSyntacInside p {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.HeaderSyntacInside h1 {
+  font-size: 40px;
+}
+.BtnContainer {
+  display: inline-block;
+  margin: 10px 0px !important;
+}
+.Btn {
+  margin: 15px 0px !important;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 50px !important;
+  font-size: 12px;
+}
