@@ -104,3 +104,81 @@
   visibility: hidden !important;
   text-decoration: none !important;
 }
+
+/*
+*
+*********************** -----> Media
+*********************** -----> Quries
+*
+*/
+
+/* 
+ Mostly all smartphones
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+
+  .NavbarInsideRight ul li:first-child,
+  .NavbarInsideLeft ul {
+    display: none;
+  }
+  .ImageSize {
+    width: 50%;
+  }
+  .NavbarInsideRight ul li:last-child i {
+    font-size: 20px;
+  }
+}
+
+/* 
+Landscape for mobiles and tablets
+*/
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  /* CSS */
+  .NavbarInsideRight ul li:first-child,
+  .NavbarInsideLeft ul {
+    display: none;
+  }
+  .ImageSize {
+    width: 50%;
+  }
+  .NavbarInsideRight ul li:last-child i {
+    font-size: 20px;
+  }
+}
+/* 
+  Landscape tablets and ipads
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+  .NavbarInsideRight ul li:first-child,
+  .NavbarInsideLeft ul {
+    display: none;
+  }
+  .ImageSize {
+    width: 50%;
+  }
+  .NavbarInsideRight ul li:last-child i {
+    font-size: 20px;
+  }
+}
+/* 
+  portrait tablets and ipads
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  .NavbarInsideRight ul li:first-child,
+  .NavbarInsideLeft ul {
+    display: none;
+  }
+  .ImageSize {
+    width: 50%;
+  }
+  .NavbarInsideRight ul li:last-child i {
+    font-size: 30px;
+  }
+}
