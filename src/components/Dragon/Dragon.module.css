@@ -1,0 +1,152 @@
+.Dragon {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/images/space.png);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.Container {
+  width: 90%;
+  margin: 0 auto !important;
+}
+.InsideDragon {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.InsideDragon p {
+  font-weight: 400;
+  font-size: 16px;
+  width: 50%;
+  margin: 30px 0px !important;
+  font-weight: 300 !important;
+}
+.InsideDragon h1 {
+  font-size: 40px;
+  width: 50%;
+}
+.Btn {
+  margin: 15px 0px !important;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 50px !important;
+  font-size: 12px;
+  display: inline-block;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  z-index: 100000;
+}
+
+.Btn:hover {
+  color: black;
+}
+
+.Btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transform-origin: right;
+  width: 0;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  color: black;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.Btn:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* 
+   Mostly all smartphones
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .Dragon h1 {
+    font-size: 26px;
+    width: 100%;
+  }
+  .Dragon p {
+    font-size: 14px;
+    margin: 20px 0px !important;
+    width: 15px;
+    width: 100%;
+  }
+  .Btn {
+    margin: 5px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 17px 26px !important;
+    font-size: 12px;
+  }
+}
+
+/* 
+    Landscape for mobiles and tablets
+    */
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  /* CSS */
+  .Dragon h1 {
+    font-size: 25px;
+  }
+  .Btn {
+    margin: 5px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 17px 26px !important;
+    font-size: 12px;
+  }
+}
+/* 
+      Landscape tablets and ipads
+    */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+  .Dragon h1 {
+    font-size: 50px;
+  }
+  .Btn {
+    margin: 15px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 40px !important;
+    font-size: 20px;
+  }
+}
+/* 
+      portrait tablets and ipads
+    */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  .Dragon h1 {
+    font-size: 50px;
+  }
+  .Btn {
+    margin: 15px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 40px !important;
+    font-size: 20px;
+  }
+}

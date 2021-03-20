@@ -1,0 +1,131 @@
+.Footer {
+  height: 15vh;
+  background: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.InsideFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+.InsideFooter ul {
+  display: flex;
+}
+
+.InsideFooter a {
+  display: flex;
+  font-size: 11px;
+  margin-left: 30px !important;
+}
+.Special {
+  color: #666666;
+}
+/* 
+     Mostly all smartphones
+    */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .Footer {
+    height: 30vh;
+  }
+  .InsideFooter {
+    height: 30vh;
+  }
+  .InsideFooter a {
+    font-size: 11px;
+  }
+  .InsideFooter ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  .InsideFooter li {
+    margin: 5px 0px !important;
+  }
+}
+
+/* 
+      Landscape for mobiles and tablets
+      */
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  .Footer {
+    height: 30vh;
+  }
+  .InsideFooter {
+    height: 30vh;
+  }
+  .InsideFooter a {
+    font-size: 11px;
+  }
+  .InsideFooter ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  .InsideFooter li {
+    margin: 5px 0px !important;
+  }
+}
+/* 
+        Landscape tablets and ipads
+      */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Footer {
+    height: 30vh;
+  }
+  .InsideFooter {
+    height: 30vh;
+  }
+  .InsideFooter a {
+    font-size: 11px;
+  }
+  .InsideFooter ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  .InsideFooter li {
+    margin: 5px 0px !important;
+  }
+}
+/* 
+        portrait tablets and ipads
+      */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Footer {
+    height: 30vh;
+  }
+  .InsideFooter {
+    height: 30vh;
+  }
+  .InsideFooter a {
+    font-size: 11px;
+  }
+  .InsideFooter ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  .InsideFooter li {
+    margin: 5px 0px !important;
+  }
+}

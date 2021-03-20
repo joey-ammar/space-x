@@ -1,0 +1,170 @@
+.VideoSpace {
+  height: 100vh !important;
+  width: 100% !important;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.VideoSection {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.VideoOverlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 1;
+  opacity: 0.2;
+}
+.VideoContent {
+  z-index: 2;
+  position: static;
+}
+.VideoContent h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 50px;
+  width: 52.5%;
+  line-height: 50px;
+  margin: 14px 0px !important;
+}
+.Container {
+  width: 90%;
+  margin: 0 auto !important;
+}
+.Btn {
+  margin: 15px 0px !important;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 50px !important;
+  font-size: 12px;
+  display: inline-block;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  z-index: 100000;
+}
+.Btn:hover {
+  color: black;
+}
+
+.Btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transform-origin: right;
+  width: 0;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  color: black;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.Btn:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* 
+   Mostly all smartphones
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .VideoContent h1 {
+    font-size: 18px;
+    width: 100%;
+    line-height: initial;
+  }
+  .Dragon p {
+    font-size: 18px;
+    margin: 10px 0px !important;
+    width: 15px;
+    width: 100%;
+  }
+  .Btn {
+    margin: 5px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 17px 26px !important;
+    font-size: 12px;
+  }
+}
+
+/* 
+      Landscape for mobiles and tablets
+      */
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  /* CSS */
+  .Dragon h1 {
+    font-size: 25px;
+  }
+  .Btn {
+    margin: 5px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 17px 26px !important;
+    font-size: 12px;
+  }
+}
+/* 
+        Landscape tablets and ipads
+      */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+  .Dragon h1 {
+    font-size: 50px;
+  }
+  .Btn {
+    margin: 15px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 40px !important;
+    font-size: 20px;
+  }
+}
+/* 
+        portrait tablets and ipads
+      */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  .Dragon h1 {
+    font-size: 50px;
+  }
+  .Btn {
+    margin: 15px 0px !important;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 40px !important;
+    font-size: 20px;
+  }
+}
