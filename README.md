@@ -1,3 +1,32 @@
+
+
+
+
+# Space X clone progect
+
+
+
+Project Title : SPACEX
+
+Technologies used : Pure React 
+
+Project live: https://spacex-project.vercel.app/
+
+Description: Space X clone website made with React
+
+More in depth: - React pure project
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
